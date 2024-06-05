@@ -1,0 +1,59 @@
+---
+imageurl: 'https://images.unsplash.com/photo-1620924049153-4d32fcbe88fe?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+title: 'This is an example for tests'
+subtitle: 'MDX common syntaxes'
+author: 'Dominique Bello, aka Catevika'
+publishedAt: 'June 6, 2024'
+credits: 'Photo by Nick Fewings on Unsplash: @jannerboy62'
+tags: ['nextjs', 'lottie', 'animation']
+---
+
+## Table of contents
+
+## Introduction
+
+This is a text example
+
+**Bold text**
+
+_Italic text_
+
+~~Strikethrough~~
+
+> Quote example
+
+## Code example
+
+```tsx
+'use client';
+
+import lottieLoading from '@/app/[locale]/lottieLoading.json';
+import lottieLoadingLight from '@/app/[locale]/lottieLoadingLight.json';
+import Lottie from 'lottie-react';
+
+export default function Loading() {
+	return (
+		<>
+			<div className='loading'>
+				<Lottie
+					data-hide-on-theme='light'
+					animationData={lottieLoading}
+					loop={true}
+				/>
+				<Lottie
+					data-hide-on-theme='dark'
+					animationData={lottieLoadingLight}
+					loop={true}
+				/>
+			</div>
+		</>
+	);
+}
+```
+
+<PostVideo id='6ih_3m_UPKg?list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj' />
+<PostImage src='/images/blog_nextjs.png' alt='blog_nextjs' priority={true} />
+
+## Conclusion
+
+That's fantastic
